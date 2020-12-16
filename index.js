@@ -80,7 +80,7 @@ window.onload = () => {
     context.fillRect(appleX * lengthPiece, appleY * lengthPiece, lengthPiece, lengthPiece);
 
     context.fillStyle = 'white';
-    trail.forEach(function (trl) {
+    trail.forEach(trl => {
       context.fillRect(trl.x * lengthPiece, trl.y * lengthPiece, lengthPiece, lengthPiece);
       if (trl.x === pointX && trl.y === pointY) {
         restart()
